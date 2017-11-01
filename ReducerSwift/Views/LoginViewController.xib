@@ -23,12 +23,12 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLF-Ed-qQM">
-                    <rect key="frame" x="84" y="274" width="30" height="30"/>
-                    <state key="normal" title="test"/>
+                    <rect key="frame" x="84" y="274" width="45" height="30"/>
+                    <state key="normal" title="button"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCf-xa-lop">
-                    <rect key="frame" x="265" y="274" width="30" height="30"/>
-                    <state key="normal" title="tust"/>
+                    <rect key="frame" x="250" y="274" width="45" height="30"/>
+                    <state key="normal" title="button"/>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nnS-FT-WVT">
                     <rect key="frame" x="125" y="150" width="125" height="30"/>
