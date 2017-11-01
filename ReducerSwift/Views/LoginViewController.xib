@@ -10,11 +10,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="ReducerSwift" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
             <connections>
                 <outlet property="login" destination="CLF-Ed-qQM" id="O8Q-L8-A1k"/>
                 <outlet property="register" destination="lCf-xa-lop" id="DFs-GT-5zJ"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="fNm-vo-wbu"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -52,17 +52,13 @@
             <color key="backgroundColor" red="0.48819681030000001" green="0.89904977730000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="EIK-UQ-sMq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="46h-Ph-mfK"/>
-                <constraint firstItem="lCf-xa-lop" firstAttribute="height" secondItem="CLF-Ed-qQM" secondAttribute="height" id="4r7-yi-0C0"/>
                 <constraint firstItem="EIK-UQ-sMq" firstAttribute="firstBaseline" secondItem="nnS-FT-WVT" secondAttribute="baseline" constant="46" id="7Ft-I4-MkG"/>
+                <constraint firstItem="lCf-xa-lop" firstAttribute="baseline" secondItem="CLF-Ed-qQM" secondAttribute="baseline" id="Bru-tI-gUf"/>
                 <constraint firstItem="nnS-FT-WVT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OVp-Uk-Nao"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="lCf-xa-lop" secondAttribute="bottom" constant="363" id="Q5C-zM-rrj"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="CLF-Ed-qQM" secondAttribute="bottom" constant="363" id="THw-9L-h27"/>
+                <constraint firstItem="lCf-xa-lop" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="254" id="Qlr-0w-WzF"/>
                 <constraint firstItem="nnS-FT-WVT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="130" id="UBe-2q-qPT"/>
-                <constraint firstItem="lCf-xa-lop" firstAttribute="width" secondItem="CLF-Ed-qQM" secondAttribute="width" id="cmL-50-smJ"/>
-                <constraint firstItem="CLF-Ed-qQM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="254" id="eKQ-nJ-JwD"/>
-                <constraint firstItem="CLF-Ed-qQM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="84" id="eLF-4F-oSG"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lCf-xa-lop" secondAttribute="trailing" constant="80" id="xCO-Fh-hfG"/>
-                <constraint firstItem="lCf-xa-lop" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="254" id="xoX-UF-e27"/>
+                <constraint firstItem="CLF-Ed-qQM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="84" id="Yyb-3z-mC4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lCf-xa-lop" secondAttribute="trailing" constant="80" id="te1-Sn-xnp"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="25.5" y="52.5"/>

@@ -7,7 +7,7 @@
 //
 
 import ReSwift
-
+@objcMembers
 class LoginViewController: UIViewController,StoreSubscriber {
 
     @IBOutlet weak var login: UIButton!
@@ -29,14 +29,13 @@ class LoginViewController: UIViewController,StoreSubscriber {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        login.addTarget(self, action: #selector(loginAction), for: .touchUpInside)
+        register.addTarget(self, action: #selector(registerAction), for: .touchUpInside)
     }
     
     func newState(state: LoginState) {
         login.setTitle(state.menuTitles[0], for: .normal)
         register.setTitle(state.menuTitles[1], for: .normal)
-        
-        login.addTarget(self, action: #selector(loginAction), for: .touchUpInside)
-        register.addTarget(self, action: #selector(registerAction), for: .touchUpInside)
     }
     
     @objc func loginAction(){

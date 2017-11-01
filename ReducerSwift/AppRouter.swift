@@ -27,6 +27,14 @@ final class AppRouter {
     fileprivate func pushViewController(state: NavigationState, animated: Bool) {
         let viewController = state.controller
         viewController.title = state.rawValue
+        let newViewControllerType = type(of: viewController)
+        if let currentVc = navigationController.topViewController {
+            let currentViewControllerType = type(of: currentVc)
+            if currentViewControllerType == newViewControllerType {
+                return
+            }
+        }
+        
         navigationController.pushViewController(viewController, animated: animated)
     }
 }
