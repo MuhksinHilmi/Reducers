@@ -11,4 +11,5 @@ import ReSwift
 struct AppState: StateType {
     let routingState: RoutingState
     let loginState: LoginState
+    let questionState: QuestionState
 }

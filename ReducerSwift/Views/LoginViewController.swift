@@ -12,6 +12,7 @@ class LoginViewController: UIViewController,StoreSubscriber {
 
     @IBOutlet weak var login: UIButton!
     @IBOutlet weak var register: UIButton!
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         store.subscribe(self) {
