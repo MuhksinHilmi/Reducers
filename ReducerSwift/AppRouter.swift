@@ -15,7 +15,6 @@ final class AppRouter {
     init(window: UIWindow) {
         navigationController = UINavigationController()
         window.rootViewController = navigationController
-        // 1
         store.subscribe(self) {
             $0.select {
                 $0.routingState
@@ -23,8 +22,7 @@ final class AppRouter {
         }
     }
     
-    // 2
-    fileprivate func pushViewController(state: NavigationState, animated: Bool) {
+    fileprivate func pushViewController(state: NavigationRoutes, animated: Bool) {
         let viewController = state.controller
         viewController.title = state.rawValue
         let newViewControllerType = type(of: viewController)
@@ -40,12 +38,9 @@ final class AppRouter {
 }
 
 // MARK: - StoreSubscriber
-// 3
 extension AppRouter: StoreSubscriber {
     func newState(state: RoutingState) {
-        // 4
         let shouldAnimate = navigationController.topViewController != nil
-        // 5
-        pushViewController(state: state.navigationState, animated: shouldAnimate)
+        pushViewController(state: state.navigation, animated: shouldAnimate)
     }
 }

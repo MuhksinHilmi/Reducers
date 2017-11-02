@@ -14,13 +14,13 @@ final class assessmentAPI {
         let urlString = "http://private-965f0-assessment5.apiary-mock.com/questions"
         
         let url = URL(string: urlString)!
-        let jsonData = try! Data(contentsOf: url)
-        let jsonDecoder = JSONDecoder()
-        
-        guard let questions = try? jsonDecoder.decode(Array<Question>.self, from: jsonData) else {return}
-        print(questions)
-        DispatchQueue.main.async {
-            completion(questions)
+        if let jsonData = try? Data(contentsOf: url) {
+            let jsonDecoder = JSONDecoder()
+            
+            guard let questions = try? jsonDecoder.decode(Array<Question>.self, from: jsonData) else {return}
+            DispatchQueue.main.async {
+                completion(questions)
+            }
         }
     }
 }

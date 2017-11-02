@@ -9,5 +9,5 @@
 import ReSwift
 
 struct RoutingAction: Action {
-    let destination: NavigationState
+    let destination: NavigationRoutes
 }

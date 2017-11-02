@@ -8,13 +8,15 @@
 
 import ReSwift
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, StoreSubscriber {
 
+    @IBOutlet weak var NextButton: UIButton!
+    @IBOutlet weak var RegisterButton: UIButton!
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        store.subscribe(self){
+        store.subscribe(self) {
             $0.select {
-                $0.questionState
+                $0.homeState
             }
         }
     }
@@ -26,17 +28,22 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        store.dispatch(fetchQuestion)
+//        store.dispatch(fetchQuestion)
         // Do any additional setup after loading the view.
+        NextButton.addTarget(self, action: #selector(nextClick), for: .touchUpInside)
+        RegisterButton.addTarget(self, action: #selector(registerClick), for: .touchUpInside)
     }
-}
-
-extension HomeViewController: StoreSubscriber {
-    func newState(state: QuestionState) {
-        
-        print(state.model.count)
-        
-//        state.showLoading ? loadingIndicator.startAnimating() : loadingIndicator.stopAnimating()
-        
+    
+    func newState(state: HomeState) {
+    }
+    
+    @objc func nextClick(){
+        let routeDestination: NavigationRoutes = .question
+        store.dispatch(RoutingAction(destination: routeDestination))
+    }
+    
+    @objc func registerClick(){
+        let routeDestination: NavigationRoutes = .register
+        store.dispatch(RoutingAction(destination: routeDestination))
     }
 }

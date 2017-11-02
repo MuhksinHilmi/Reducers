@@ -8,6 +8,6 @@
 
 import ReSwift
 
-func loginReducer(action: Action, state: LoginState?) -> LoginState {
-    return LoginState()
+func homeReducer(action: Action, state: HomeState?) -> HomeState {
+    return HomeState()
 }

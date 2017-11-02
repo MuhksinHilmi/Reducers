@@ -9,7 +9,9 @@
 import ReSwift
 @objcMembers
 class LoginViewController: UIViewController,StoreSubscriber {
-
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
+    
     @IBOutlet weak var login: UIButton!
     @IBOutlet weak var register: UIButton!
     
@@ -30,8 +32,8 @@ class LoginViewController: UIViewController,StoreSubscriber {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        login.addTarget(self, action: #selector(loginAction), for: .touchUpInside)
-        register.addTarget(self, action: #selector(registerAction), for: .touchUpInside)
+        login.addTarget(self, action: #selector(loginButton), for: .touchUpInside)
+        register.addTarget(self, action: #selector(registerButton), for: .touchUpInside)
     }
     
     func newState(state: LoginState) {
@@ -39,12 +41,12 @@ class LoginViewController: UIViewController,StoreSubscriber {
         register.setTitle(state.menuTitles[1], for: .normal)
     }
     
-    @objc func loginAction(){
-        let routeDestination: NavigationState = .home
+    @objc func loginButton(){
+        let routeDestination: NavigationState = .question
         store.dispatch(RoutingAction(destination: routeDestination))
     }
     
-    @objc func registerAction(){
+    @objc func registerButton(){
         let routeDestination: NavigationState = .register
         store.dispatch(RoutingAction(destination: routeDestination))
     }

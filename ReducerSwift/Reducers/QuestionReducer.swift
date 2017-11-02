@@ -13,8 +13,9 @@ func questionReducer(action:Action, state: QuestionState?) -> QuestionState{
     switch(action){
     case _ as FetchQuestionAction:
         state = QuestionState(model: [], showLoading: true)
-    case _ as SetQuestionAction:
-
+    case let setQuestionAction as SetQuestionAction:
+        let model = setQuestionAction.questions
+        state.model = model
         state.showLoading = false
     default:
         break

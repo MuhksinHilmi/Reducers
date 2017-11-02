@@ -13,7 +13,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
             <connections>
                 <outlet property="login" destination="CLF-Ed-qQM" id="O8Q-L8-A1k"/>
+                <outlet property="password" destination="EIK-UQ-sMq" id="GBU-N8-hMs"/>
                 <outlet property="register" destination="lCf-xa-lop" id="DFs-GT-5zJ"/>
+                <outlet property="username" destination="nnS-FT-WVT" id="H0R-KO-Duz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="fNm-vo-wbu"/>
             </connections>
         </placeholder>
@@ -31,18 +33,18 @@
                     <state key="normal" title="button"/>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nnS-FT-WVT">
-                    <rect key="frame" x="125" y="150" width="125" height="30"/>
+                    <rect key="frame" x="112" y="150" width="150" height="30"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="125" id="FRP-om-wMF"/>
+                        <constraint firstAttribute="width" constant="150" id="FRP-om-wMF"/>
                     </constraints>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EIK-UQ-sMq">
-                    <rect key="frame" x="125" y="196" width="125" height="30"/>
+                    <rect key="frame" x="112" y="199" width="150" height="30"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="125" id="pkJ-iV-L9J"/>
+                        <constraint firstAttribute="width" constant="150" id="pkJ-iV-L9J"/>
                     </constraints>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -52,7 +54,7 @@
             <color key="backgroundColor" red="0.48819681030000001" green="0.89904977730000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="EIK-UQ-sMq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="46h-Ph-mfK"/>
-                <constraint firstItem="EIK-UQ-sMq" firstAttribute="firstBaseline" secondItem="nnS-FT-WVT" secondAttribute="baseline" constant="46" id="7Ft-I4-MkG"/>
+                <constraint firstItem="EIK-UQ-sMq" firstAttribute="firstBaseline" secondItem="nnS-FT-WVT" secondAttribute="baseline" constant="49" id="7Ft-I4-MkG"/>
                 <constraint firstItem="lCf-xa-lop" firstAttribute="baseline" secondItem="CLF-Ed-qQM" secondAttribute="baseline" id="Bru-tI-gUf"/>
                 <constraint firstItem="nnS-FT-WVT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OVp-Uk-Nao"/>
                 <constraint firstItem="lCf-xa-lop" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="254" id="Qlr-0w-WzF"/>

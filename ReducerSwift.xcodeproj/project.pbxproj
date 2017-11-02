@@ -10,7 +10,6 @@
 		4E6A66161F96EE380D6CE297 /* Pods_ReducerSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2BF5A2DCE965D12F6C8B4E /* Pods_ReducerSwiftUITests.framework */; };
 		6EDEA75698DA1DB4C870F4F3 /* Pods_ReducerSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9122B441879F248FC0CF4D2D /* Pods_ReducerSwiftTests.framework */; };
 		83F90F032531D1A163D72DBC /* Pods_ReducerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3239FA17EA2BCC316A4F5468 /* Pods_ReducerSwift.framework */; };
-		AC28B13D1FA9A12C003C4831 /* NavigationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC28B13C1FA9A12C003C4831 /* NavigationState.swift */; };
 		AC28B13F1FA9A2EE003C4831 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC28B13E1FA9A2EE003C4831 /* Network.swift */; };
 		AC28B1411FA9A31B003C4831 /* QuestionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC28B1401FA9A31B003C4831 /* QuestionState.swift */; };
 		AC28B1431FA9A443003C4831 /* QuestionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC28B1421FA9A443003C4831 /* QuestionAction.swift */; };
@@ -18,14 +17,10 @@
 		AC6AD2FF1FA4D05900A871BC /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6AD2F21FA4D05900A871BC /* AppRouter.swift */; };
 		AC6AD3001FA4D05900A871BC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6AD2F41FA4D05900A871BC /* HomeViewController.swift */; };
 		AC6AD3011FA4D05900A871BC /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC6AD2F51FA4D05900A871BC /* HomeViewController.xib */; };
-		AC6AD3021FA4D05900A871BC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6AD2F61FA4D05900A871BC /* LoginViewController.swift */; };
-		AC6AD3031FA4D05900A871BC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC6AD2F71FA4D05900A871BC /* LoginViewController.xib */; };
 		AC6AD3041FA4D05900A871BC /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6AD2FA1FA4D05900A871BC /* AppReducer.swift */; };
 		AC6AD3051FA4D05900A871BC /* RoutingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6AD2FB1FA4D05900A871BC /* RoutingReducer.swift */; };
 		AC6AD3061FA4D05900A871BC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6AD2FD1FA4D05900A871BC /* AppState.swift */; };
 		AC6AD3071FA4D05900A871BC /* RoutingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6AD2FE1FA4D05900A871BC /* RoutingState.swift */; };
-		AC6AD30B1FA4D51100A871BC /* LoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6AD30A1FA4D51100A871BC /* LoginState.swift */; };
-		AC6AD30D1FA4D5E500A871BC /* LoginReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6AD30C1FA4D5E500A871BC /* LoginReducer.swift */; };
 		AC6AD30F1FA4DBB000A871BC /* RoutingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6AD30E1FA4DBB000A871BC /* RoutingAction.swift */; };
 		AC6AD3121FA4E31A00A871BC /* RegisterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6AD3101FA4E31A00A871BC /* RegisterTableViewController.swift */; };
 		AC6AD3131FA4E31A00A871BC /* RegisterTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC6AD3111FA4E31A00A871BC /* RegisterTableViewController.xib */; };
@@ -34,6 +29,12 @@
 		ACB78C851FA1D45C00CC1F63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB78C831FA1D45C00CC1F63 /* LaunchScreen.storyboard */; };
 		ACB78C901FA1D45C00CC1F63 /* ReducerSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB78C8F1FA1D45C00CC1F63 /* ReducerSwiftTests.swift */; };
 		ACB78C9B1FA1D45C00CC1F63 /* ReducerSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB78C9A1FA1D45C00CC1F63 /* ReducerSwiftUITests.swift */; };
+		ACC5F19A1FAADC3100E67F9A /* QuestionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5F1981FAADC3100E67F9A /* QuestionTableViewController.swift */; };
+		ACC5F19B1FAADC3100E67F9A /* QuestionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACC5F1991FAADC3100E67F9A /* QuestionTableViewController.xib */; };
+		ACC5F19E1FAADD0F00E67F9A /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5F19D1FAADD0F00E67F9A /* TableDataSource.swift */; };
+		ACC5F1A01FAB0AAD00E67F9A /* HomeReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5F19F1FAB0AAD00E67F9A /* HomeReducer.swift */; };
+		ACC5F1A21FAB0AB500E67F9A /* HomeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5F1A11FAB0AB400E67F9A /* HomeState.swift */; };
+		ACC5F1A41FAB665500E67F9A /* NavigationRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5F1A31FAB665500E67F9A /* NavigationRoutes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +63,6 @@
 		716016036A67A360C722FB7F /* Pods-ReducerSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReducerSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReducerSwiftTests/Pods-ReducerSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		9122B441879F248FC0CF4D2D /* Pods_ReducerSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReducerSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BFD25E38854434EA43B6F5C /* Pods-ReducerSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReducerSwiftUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReducerSwiftUITests/Pods-ReducerSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
-		AC28B13C1FA9A12C003C4831 /* NavigationState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationState.swift; sourceTree = "<group>"; };
 		AC28B13E1FA9A2EE003C4831 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		AC28B1401FA9A31B003C4831 /* QuestionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionState.swift; sourceTree = "<group>"; };
 		AC28B1421FA9A443003C4831 /* QuestionAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAction.swift; sourceTree = "<group>"; };
@@ -70,14 +70,10 @@
 		AC6AD2F21FA4D05900A871BC /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		AC6AD2F41FA4D05900A871BC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AC6AD2F51FA4D05900A871BC /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		AC6AD2F61FA4D05900A871BC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		AC6AD2F71FA4D05900A871BC /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		AC6AD2FA1FA4D05900A871BC /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		AC6AD2FB1FA4D05900A871BC /* RoutingReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutingReducer.swift; sourceTree = "<group>"; };
 		AC6AD2FD1FA4D05900A871BC /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		AC6AD2FE1FA4D05900A871BC /* RoutingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutingState.swift; sourceTree = "<group>"; };
-		AC6AD30A1FA4D51100A871BC /* LoginState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginState.swift; sourceTree = "<group>"; };
-		AC6AD30C1FA4D5E500A871BC /* LoginReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginReducer.swift; sourceTree = "<group>"; };
 		AC6AD30E1FA4DBB000A871BC /* RoutingAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingAction.swift; sourceTree = "<group>"; };
 		AC6AD3101FA4E31A00A871BC /* RegisterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTableViewController.swift; sourceTree = "<group>"; };
 		AC6AD3111FA4E31A00A871BC /* RegisterTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterTableViewController.xib; sourceTree = "<group>"; };
@@ -92,6 +88,12 @@
 		ACB78C961FA1D45C00CC1F63 /* ReducerSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReducerSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB78C9A1FA1D45C00CC1F63 /* ReducerSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReducerSwiftUITests.swift; sourceTree = "<group>"; };
 		ACB78C9C1FA1D45C00CC1F63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACC5F1981FAADC3100E67F9A /* QuestionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewController.swift; sourceTree = "<group>"; };
+		ACC5F1991FAADC3100E67F9A /* QuestionTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionTableViewController.xib; sourceTree = "<group>"; };
+		ACC5F19D1FAADD0F00E67F9A /* TableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
+		ACC5F19F1FAB0AAD00E67F9A /* HomeReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeReducer.swift; sourceTree = "<group>"; };
+		ACC5F1A11FAB0AB400E67F9A /* HomeState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeState.swift; sourceTree = "<group>"; };
+		ACC5F1A31FAB665500E67F9A /* NavigationRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationRoutes.swift; sourceTree = "<group>"; };
 		EAAC9766E47B1B92960B67F0 /* Pods-ReducerSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReducerSwiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReducerSwiftUITests/Pods-ReducerSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,10 +151,10 @@
 			children = (
 				AC6AD2F41FA4D05900A871BC /* HomeViewController.swift */,
 				AC6AD2F51FA4D05900A871BC /* HomeViewController.xib */,
-				AC6AD2F61FA4D05900A871BC /* LoginViewController.swift */,
-				AC6AD2F71FA4D05900A871BC /* LoginViewController.xib */,
 				AC6AD3101FA4E31A00A871BC /* RegisterTableViewController.swift */,
 				AC6AD3111FA4E31A00A871BC /* RegisterTableViewController.xib */,
+				ACC5F1981FAADC3100E67F9A /* QuestionTableViewController.swift */,
+				ACC5F1991FAADC3100E67F9A /* QuestionTableViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,8 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				AC6AD2FA1FA4D05900A871BC /* AppReducer.swift */,
+				ACC5F19F1FAB0AAD00E67F9A /* HomeReducer.swift */,
 				AC6AD2FB1FA4D05900A871BC /* RoutingReducer.swift */,
-				AC6AD30C1FA4D5E500A871BC /* LoginReducer.swift */,
 				AC28B1441FA9ABFE003C4831 /* QuestionReducer.swift */,
 			);
 			path = Reducers;
@@ -180,10 +182,9 @@
 		AC6AD2FC1FA4D05900A871BC /* State */ = {
 			isa = PBXGroup;
 			children = (
-				AC28B13C1FA9A12C003C4831 /* NavigationState.swift */,
 				AC6AD2FD1FA4D05900A871BC /* AppState.swift */,
+				ACC5F1A11FAB0AB400E67F9A /* HomeState.swift */,
 				AC6AD2FE1FA4D05900A871BC /* RoutingState.swift */,
-				AC6AD30A1FA4D51100A871BC /* LoginState.swift */,
 				AC28B1401FA9A31B003C4831 /* QuestionState.swift */,
 			);
 			path = State;
@@ -214,12 +215,14 @@
 		ACB78C791FA1D45C00CC1F63 /* ReducerSwift */ = {
 			isa = PBXGroup;
 			children = (
+				ACB78C861FA1D45C00CC1F63 /* Info.plist */,
 				ACB78C7A1FA1D45C00CC1F63 /* AppDelegate.swift */,
 				AC6AD2F21FA4D05900A871BC /* AppRouter.swift */,
+				ACC5F1A31FAB665500E67F9A /* NavigationRoutes.swift */,
 				ACB78C811FA1D45C00CC1F63 /* Assets.xcassets */,
-				ACB78C861FA1D45C00CC1F63 /* Info.plist */,
-				ACB78C831FA1D45C00CC1F63 /* LaunchScreen.storyboard */,
 				AC6AD2F81FA4D05900A871BC /* Actions */,
+				ACC5F19C1FAADC6800E67F9A /* DataSource */,
+				ACB78C831FA1D45C00CC1F63 /* LaunchScreen.storyboard */,
 				AC28B13B1FA99464003C4831 /* Networking */,
 				AC6AD2F91FA4D05900A871BC /* Reducers */,
 				AC6AD2FC1FA4D05900A871BC /* State */,
@@ -244,6 +247,14 @@
 				ACB78C9C1FA1D45C00CC1F63 /* Info.plist */,
 			);
 			path = ReducerSwiftUITests;
+			sourceTree = "<group>";
+		};
+		ACC5F19C1FAADC6800E67F9A /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				ACC5F19D1FAADD0F00E67F9A /* TableDataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 		BB7847B927F72C3AD69FED02 /* Frameworks */ = {
@@ -372,9 +383,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC6AD3031FA4D05900A871BC /* LoginViewController.xib in Resources */,
 				ACB78C851FA1D45C00CC1F63 /* LaunchScreen.storyboard in Resources */,
 				AC6AD3131FA4E31A00A871BC /* RegisterTableViewController.xib in Resources */,
+				ACC5F19B1FAADC3100E67F9A /* QuestionTableViewController.xib in Resources */,
 				ACB78C821FA1D45C00CC1F63 /* Assets.xcassets in Resources */,
 				AC6AD3011FA4D05900A871BC /* HomeViewController.xib in Resources */,
 			);
@@ -539,21 +550,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC6AD30D1FA4D5E500A871BC /* LoginReducer.swift in Sources */,
+				ACC5F19A1FAADC3100E67F9A /* QuestionTableViewController.swift in Sources */,
+				ACC5F1A41FAB665500E67F9A /* NavigationRoutes.swift in Sources */,
 				AC6AD3071FA4D05900A871BC /* RoutingState.swift in Sources */,
 				AC6AD3121FA4E31A00A871BC /* RegisterTableViewController.swift in Sources */,
 				AC6AD3041FA4D05900A871BC /* AppReducer.swift in Sources */,
+				ACC5F1A21FAB0AB500E67F9A /* HomeState.swift in Sources */,
 				AC6AD30F1FA4DBB000A871BC /* RoutingAction.swift in Sources */,
+				ACC5F19E1FAADD0F00E67F9A /* TableDataSource.swift in Sources */,
 				AC28B1431FA9A443003C4831 /* QuestionAction.swift in Sources */,
 				AC28B1411FA9A31B003C4831 /* QuestionState.swift in Sources */,
 				AC28B1451FA9ABFE003C4831 /* QuestionReducer.swift in Sources */,
-				AC28B13D1FA9A12C003C4831 /* NavigationState.swift in Sources */,
-				AC6AD30B1FA4D51100A871BC /* LoginState.swift in Sources */,
 				ACB78C7B1FA1D45C00CC1F63 /* AppDelegate.swift in Sources */,
 				AC6AD3061FA4D05900A871BC /* AppState.swift in Sources */,
 				AC6AD2FF1FA4D05900A871BC /* AppRouter.swift in Sources */,
 				AC6AD3051FA4D05900A871BC /* RoutingReducer.swift in Sources */,
-				AC6AD3021FA4D05900A871BC /* LoginViewController.swift in Sources */,
+				ACC5F1A01FAB0AAD00E67F9A /* HomeReducer.swift in Sources */,
 				AC28B13F1FA9A2EE003C4831 /* Network.swift in Sources */,
 				AC6AD3001FA4D05900A871BC /* HomeViewController.swift in Sources */,
 			);

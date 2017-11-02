@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="ReducerSwift" customModuleProvider="target">
             <connections>
+                <outlet property="NextButton" destination="HzU-Ef-EfQ" id="nc2-d8-4wm"/>
+                <outlet property="RegisterButton" destination="z8b-jr-ivl" id="SBX-Ig-7av"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,8 +20,40 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="0.55777527500000001" green="1" blue="0.55060077289999998" alpha="1" colorSpace="calibratedRGB"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNb-No-qSm">
+                    <rect key="frame" x="143" y="184" width="89" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="OCs-W5-yOK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HzU-Ef-EfQ">
+                    <rect key="frame" x="74" y="318" width="32" height="30"/>
+                    <state key="normal" title="Next">
+                        <color key="titleColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8b-jr-ivl">
+                    <rect key="frame" x="246" y="318" width="57" height="30"/>
+                    <state key="normal" title="Register">
+                        <color key="titleColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HzU-Ef-EfQ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="GUf-yQ-bqA"/>
+                <constraint firstItem="HzU-Ef-EfQ" firstAttribute="baseline" secondItem="z8b-jr-ivl" secondAttribute="baseline" id="Nnx-PM-XQ8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="z8b-jr-ivl" secondAttribute="trailing" constant="72" id="RaM-rY-ahK"/>
+                <constraint firstItem="HzU-Ef-EfQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="74" id="VtY-Bf-2Qk"/>
+                <constraint firstItem="ZNb-No-qSm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="164" id="aMD-O6-thH"/>
+                <constraint firstItem="ZNb-No-qSm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="z6v-0X-OJN"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
         </view>
     </objects>
 </document>

@@ -9,7 +9,6 @@
 import ReSwift
 
 func fetchQuestion(state: AppState, store: Store<AppState>) -> FetchQuestionAction {
-    
     assessmentAPI.getQuestion { questions in
         store.dispatch(SetQuestionAction(questions: questions))
     }

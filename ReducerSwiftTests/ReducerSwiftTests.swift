@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import ReSwift
 @testable import ReducerSwift
 
 class ReducerSwiftTests: XCTestCase {
@@ -21,9 +22,12 @@ class ReducerSwiftTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func test() {
+        
+//        let store = Store<AppState>(reducer: appReducer, state: nil)
+        
+        // Check result
+       
     }
     
     func testPerformanceExample() {

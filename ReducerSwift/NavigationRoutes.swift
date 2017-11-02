@@ -8,15 +8,13 @@
 
 import ReSwift
 
-enum NavigationState: String {
-    case login = "Login"
-    case home = "Home"
-    case register = "Register"
+enum NavigationRoutes: String {
+    case home = "Home", question = "List of Question", register = "Register"
     
     var controller: UIViewController {
         switch self {
-        case .login:
-            return LoginViewController()
+        case .question:
+            return QuestionTableViewController()
         case .register:
             return RegisterTableViewController()
         default:

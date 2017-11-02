@@ -1,5 +1,5 @@
 //
-//  LoginState.swift
+//  HomeState.swift
 //  ReducerSwift
 //
 //  Created by Muhksin Hilmi on 28/10/2017.
@@ -8,10 +8,6 @@
 
 import ReSwift
 
-struct LoginState: StateType {
-    var menuTitles: [String]
+struct HomeState: StateType {
     
-    init() {
-        menuTitles = ["Login", "Register"]
-    }
 }

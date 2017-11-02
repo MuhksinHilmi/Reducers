@@ -9,9 +9,9 @@
 import ReSwift
 
 struct RoutingState: StateType {
-    var navigationState: NavigationState
+    var navigation: NavigationRoutes
     
-    init(navigationState: NavigationState = .login) {
-        self.navigationState = navigationState
+    init(navigation: NavigationRoutes = .home) {
+        self.navigation = navigation
     }
 }
