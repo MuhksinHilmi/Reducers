@@ -11,9 +11,10 @@ import ReSwift
 @testable import ReducerSwift
 
 class ReducerSwiftTests: XCTestCase {
-    
+
     override func setUp() {
         super.setUp()
+        
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
@@ -23,11 +24,13 @@ class ReducerSwiftTests: XCTestCase {
     }
     
     func test() {
+        let store = Store<AppState>(reducer: appReducer, state: nil)
+        // agumon
+        store.dispatch(DigiAction(attackType: .fire))
         
-//        let store = Store<AppState>(reducer: appReducer, state: nil)
-        
+        print("health = ",store.state.digiState.health)
         // Check result
-       
+        XCTAssertTrue(store.state.digiState.health > 50)
     }
     
     func testPerformanceExample() {

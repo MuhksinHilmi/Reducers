@@ -12,5 +12,7 @@ func appReducer(action: Action, state: AppState?) -> AppState {
     return AppState(
         routingState: routingReducer(action: action, state: state?.routingState),
         homeState: homeReducer(action: action, state: state?.homeState),
-        questionState: questionReducer(action: action, state: state?.questionState))
+        questionState: questionReducer(action: action, state: state?.questionState),
+        digiState: digiReducer(action: action, state: state?.digiState)
+    )
 }

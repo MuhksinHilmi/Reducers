@@ -9,7 +9,7 @@
 import ReSwift
 
 enum NavigationRoutes: String {
-    case home = "Home", question = "List of Question", register = "Register"
+    case home = "Home", question = "List of Question", register = "Register", digimon = "Digimon"
     
     var controller: UIViewController {
         switch self {
@@ -17,6 +17,8 @@ enum NavigationRoutes: String {
             return QuestionTableViewController()
         case .register:
             return RegisterTableViewController()
+        case .digimon:
+            return DigimonViewController()
         default:
             return HomeViewController()
         }

@@ -12,4 +12,5 @@ struct AppState: StateType {
     let routingState: RoutingState
     let homeState: HomeState
     let questionState: QuestionState
+    let digiState: DigiState
 }

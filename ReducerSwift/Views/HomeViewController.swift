@@ -43,7 +43,7 @@ class HomeViewController: UIViewController, StoreSubscriber {
     }
     
     @objc func registerClick(){
-        let routeDestination: NavigationRoutes = .register
+        let routeDestination: NavigationRoutes = .digimon
         store.dispatch(RoutingAction(destination: routeDestination))
     }
 }

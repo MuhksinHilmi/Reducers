@@ -29,12 +29,16 @@
 		ACB78C851FA1D45C00CC1F63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB78C831FA1D45C00CC1F63 /* LaunchScreen.storyboard */; };
 		ACB78C901FA1D45C00CC1F63 /* ReducerSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB78C8F1FA1D45C00CC1F63 /* ReducerSwiftTests.swift */; };
 		ACB78C9B1FA1D45C00CC1F63 /* ReducerSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB78C9A1FA1D45C00CC1F63 /* ReducerSwiftUITests.swift */; };
+		ACBEA0781FABD08200DA9B51 /* DigiReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBEA0771FABD08200DA9B51 /* DigiReducer.swift */; };
 		ACC5F19A1FAADC3100E67F9A /* QuestionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5F1981FAADC3100E67F9A /* QuestionTableViewController.swift */; };
 		ACC5F19B1FAADC3100E67F9A /* QuestionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACC5F1991FAADC3100E67F9A /* QuestionTableViewController.xib */; };
 		ACC5F19E1FAADD0F00E67F9A /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5F19D1FAADD0F00E67F9A /* TableDataSource.swift */; };
 		ACC5F1A01FAB0AAD00E67F9A /* HomeReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5F19F1FAB0AAD00E67F9A /* HomeReducer.swift */; };
 		ACC5F1A21FAB0AB500E67F9A /* HomeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5F1A11FAB0AB400E67F9A /* HomeState.swift */; };
 		ACC5F1A41FAB665500E67F9A /* NavigationRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5F1A31FAB665500E67F9A /* NavigationRoutes.swift */; };
+		ACC5F1A61FABCB2000E67F9A /* DigimonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5F1A51FABCB2000E67F9A /* DigimonViewController.swift */; };
+		ACC5F1A81FABCB6600E67F9A /* DigiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5F1A71FABCB6600E67F9A /* DigiState.swift */; };
+		ACC5F1AA1FABCECA00E67F9A /* DigiAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5F1A91FABCECA00E67F9A /* DigiAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,12 +92,16 @@
 		ACB78C961FA1D45C00CC1F63 /* ReducerSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReducerSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB78C9A1FA1D45C00CC1F63 /* ReducerSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReducerSwiftUITests.swift; sourceTree = "<group>"; };
 		ACB78C9C1FA1D45C00CC1F63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACBEA0771FABD08200DA9B51 /* DigiReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigiReducer.swift; sourceTree = "<group>"; };
 		ACC5F1981FAADC3100E67F9A /* QuestionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewController.swift; sourceTree = "<group>"; };
 		ACC5F1991FAADC3100E67F9A /* QuestionTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionTableViewController.xib; sourceTree = "<group>"; };
 		ACC5F19D1FAADD0F00E67F9A /* TableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
 		ACC5F19F1FAB0AAD00E67F9A /* HomeReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeReducer.swift; sourceTree = "<group>"; };
 		ACC5F1A11FAB0AB400E67F9A /* HomeState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeState.swift; sourceTree = "<group>"; };
 		ACC5F1A31FAB665500E67F9A /* NavigationRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationRoutes.swift; sourceTree = "<group>"; };
+		ACC5F1A51FABCB2000E67F9A /* DigimonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonViewController.swift; sourceTree = "<group>"; };
+		ACC5F1A71FABCB6600E67F9A /* DigiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigiState.swift; sourceTree = "<group>"; };
+		ACC5F1A91FABCECA00E67F9A /* DigiAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigiAction.swift; sourceTree = "<group>"; };
 		EAAC9766E47B1B92960B67F0 /* Pods-ReducerSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReducerSwiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReducerSwiftUITests/Pods-ReducerSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +163,7 @@
 				AC6AD3111FA4E31A00A871BC /* RegisterTableViewController.xib */,
 				ACC5F1981FAADC3100E67F9A /* QuestionTableViewController.swift */,
 				ACC5F1991FAADC3100E67F9A /* QuestionTableViewController.xib */,
+				ACC5F1A51FABCB2000E67F9A /* DigimonViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +173,7 @@
 			children = (
 				AC6AD30E1FA4DBB000A871BC /* RoutingAction.swift */,
 				AC28B1421FA9A443003C4831 /* QuestionAction.swift */,
+				ACC5F1A91FABCECA00E67F9A /* DigiAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -175,6 +185,7 @@
 				ACC5F19F1FAB0AAD00E67F9A /* HomeReducer.swift */,
 				AC6AD2FB1FA4D05900A871BC /* RoutingReducer.swift */,
 				AC28B1441FA9ABFE003C4831 /* QuestionReducer.swift */,
+				ACBEA0771FABD08200DA9B51 /* DigiReducer.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -186,6 +197,7 @@
 				ACC5F1A11FAB0AB400E67F9A /* HomeState.swift */,
 				AC6AD2FE1FA4D05900A871BC /* RoutingState.swift */,
 				AC28B1401FA9A31B003C4831 /* QuestionState.swift */,
+				ACC5F1A71FABCB6600E67F9A /* DigiState.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -550,6 +562,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC5F1A81FABCB6600E67F9A /* DigiState.swift in Sources */,
 				ACC5F19A1FAADC3100E67F9A /* QuestionTableViewController.swift in Sources */,
 				ACC5F1A41FAB665500E67F9A /* NavigationRoutes.swift in Sources */,
 				AC6AD3071FA4D05900A871BC /* RoutingState.swift in Sources */,
@@ -558,14 +571,17 @@
 				ACC5F1A21FAB0AB500E67F9A /* HomeState.swift in Sources */,
 				AC6AD30F1FA4DBB000A871BC /* RoutingAction.swift in Sources */,
 				ACC5F19E1FAADD0F00E67F9A /* TableDataSource.swift in Sources */,
+				ACC5F1A61FABCB2000E67F9A /* DigimonViewController.swift in Sources */,
 				AC28B1431FA9A443003C4831 /* QuestionAction.swift in Sources */,
 				AC28B1411FA9A31B003C4831 /* QuestionState.swift in Sources */,
 				AC28B1451FA9ABFE003C4831 /* QuestionReducer.swift in Sources */,
 				ACB78C7B1FA1D45C00CC1F63 /* AppDelegate.swift in Sources */,
+				ACC5F1AA1FABCECA00E67F9A /* DigiAction.swift in Sources */,
 				AC6AD3061FA4D05900A871BC /* AppState.swift in Sources */,
 				AC6AD2FF1FA4D05900A871BC /* AppRouter.swift in Sources */,
 				AC6AD3051FA4D05900A871BC /* RoutingReducer.swift in Sources */,
 				ACC5F1A01FAB0AAD00E67F9A /* HomeReducer.swift in Sources */,
+				ACBEA0781FABD08200DA9B51 /* DigiReducer.swift in Sources */,
 				AC28B13F1FA9A2EE003C4831 /* Network.swift in Sources */,
 				AC6AD3001FA4D05900A871BC /* HomeViewController.swift in Sources */,
 			);

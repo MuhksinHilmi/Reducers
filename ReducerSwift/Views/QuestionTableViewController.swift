@@ -36,7 +36,6 @@ class QuestionTableViewController: UITableViewController {
         store.dispatch(fetchQuestion)
     }
     override func viewDidLoad() {
-//        store.dispatch(fetchQuestion)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         tableView.separatorStyle = .none
     }
