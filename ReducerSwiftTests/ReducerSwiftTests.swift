@@ -26,11 +26,12 @@ class ReducerSwiftTests: XCTestCase {
     func test() {
         let store = Store<AppState>(reducer: appReducer, state: nil)
         // agumon
-        store.dispatch(DigiAction(attackType: .fire))
-        
+        store.dispatch(DigiAction(attackType: .water))
+        // seadramon
+        store.dispatch(DigiAction(attackType: .water))
         print("health = ",store.state.digiState.health)
         // Check result
-        XCTAssertTrue(store.state.digiState.health > 50)
+        XCTAssertTrue(store.state.digiState.health >= 70)
     }
     
     func testPerformanceExample() {
